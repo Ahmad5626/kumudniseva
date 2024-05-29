@@ -44,7 +44,7 @@
     albumLabel: 'Image %1 of %2',
     alwaysShowNavOnTouchDevices: false,
     fadeDuration: 600,
-    fitImagesInViewport: true,
+    fitimagesInViewport: true,
     imageFadeDuration: 600,
     // maxWidth: 800,
     // maxHeight: 600,
@@ -68,8 +68,8 @@
     $.extend(this.options, options);
   };
 
-  Lightbox.prototype.imageCountLabel = function(currentImageNum, totalImages) {
-    return this.options.albumLabel.replace(/%1/g, currentImageNum).replace(/%2/g, totalImages);
+  Lightbox.prototype.imageCountLabel = function(currentImageNum, totalimages) {
+    return this.options.albumLabel.replace(/%1/g, currentImageNum).replace(/%2/g, totalimages);
   };
 
   Lightbox.prototype.init = function() {
@@ -297,7 +297,7 @@
       $image.width(preloader.width);
       $image.height(preloader.height);
 
-      if (self.options.fitImagesInViewport) {
+      if (self.options.fitimagesInViewport) {
         // Fit image inside the viewport.
         // Take into account the border around the image and an additional 10px gutter on each side.
 
@@ -379,7 +379,7 @@
 
     this.updateNav();
     this.updateDetails();
-    this.preloadNeighboringImages();
+    this.preloadNeighboringimages();
     this.enableKeyboardNav();
   };
 
@@ -458,7 +458,7 @@
   };
 
   // Preload previous and next images in set.
-  Lightbox.prototype.preloadNeighboringImages = function() {
+  Lightbox.prototype.preloadNeighboringimages = function() {
     if (this.album.length > this.currentImageIndex + 1) {
       var preloadNext = new Image();
       preloadNext.src = this.album[this.currentImageIndex + 1].link;
