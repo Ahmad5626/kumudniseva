@@ -465,7 +465,7 @@ ul, ol {
 }
 
 ul {
-	list-style: disc;
+	list-style: disc;padding: 0px;
 }
 
 ol {
@@ -2230,8 +2230,7 @@ aside .news-letter hr {
 }
 
 .contact-page-section .people-info-wrap {
-	width: 57.265%;
-
+    width: 100%;
 }
 
 .contact-page-section .people-info-wrap h2 {
@@ -2353,7 +2352,7 @@ aside .news-letter hr {
 }
 
 .about-upper-section .who-we-are {
-	width: 57.265%;
+    width: 100%;
 }
 
 .about-upper-section .who-we-are p {
@@ -3577,4 +3576,8 @@ RESPONSIVE STYLESHEET
 .what-other-say .owl-carousel .owl-nav button.owl-prev:hover,
 .what-other-say .owl-nav button.owl-next:hover {
 	background: #12a84e;
+}
+.newul li {
+	border: 1px solid black;
+	padding: 20px 20px
 }
