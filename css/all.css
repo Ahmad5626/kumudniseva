@@ -4224,3 +4224,9 @@ readers do not read off random characters that represent icons */
   .logo-wrap img {
     max-height: 81px;
 }
+.newbanner{
+  width: 100%;
+}
+.newbanner img{
+  width: 100%;
+}
